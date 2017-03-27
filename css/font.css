@@ -1,0 +1,15 @@
+@font-face{
+    font-family: "ukrbold";
+    src: url("../font/ukrainianfreesetbold.otf");
+    font-weight: normal;
+}
+@font-face{
+    font-family: "ukritalic";
+    src: url("../font/ukrainianfreesetitalic.otf");
+    font-weight: normal;
+}
+@font-face{
+    font-family: "ukrnormal";
+    src: url("../font/ukrainianfreesetnormal.otf");
+    font-weight: normal;
+}

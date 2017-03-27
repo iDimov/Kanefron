@@ -1,0 +1,454 @@
+ ::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+
+*,
+*:before.
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  overflow: hidden;
+  font-family: "ukrnormal", Arial;
+  scroll-behavior: smooth;
+}
+
+body:after {
+    content: "";
+    width: 100%;
+    height: 30px !important;
+    background: linear-gradient(to right, rgba(252, 211, 0, 0.86), rgba(255, 248, 225, 0));
+    position: absolute;
+    bottom: 0px;
+    z-index: -999;
+}
+#container .box {
+  width:100vw;
+  height:100vh;
+  display:inline-block;
+  position:relative;
+}
+#container .box > div {
+
+}
+.uk-overlay-default {
+  background: transparent;
+}
+.txt-map {
+  position: absolute;
+}
+.uk-overlay-panel {
+  background: red;
+}
+.uk-overlay {
+    padding: 0;
+}
+.map-preview img {
+    max-width: 851px;
+}
+#hover img {
+opacity: 1;
+    transition: all 1s ease;
+}
+
+#container {
+  overflow-y:scroll;
+  overflow-x:hidden;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  position:absolute;
+  width:100vh;
+  height:100vw;
+}
+#container2 {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space:nowrap;
+}
+
+.line-1 {
+  width: 0px;
+  background: #354777;
+  height: 3px;
+      top: 6px;
+    position: relative;
+}
+.line-2 {
+  width: 0px;
+  background: #354777;
+  height: 3px;
+  position: relative;
+  top: 10px;
+}
+.line-3 {
+  width: 0px;
+  background: #354777;
+  height: 3px;
+  position: relative;
+  top: 5px;
+}
+.top-text img {
+  margin: 5px 0;
+}
+/*1 слайд*/
+.wrap {
+  display: flex;
+  height: 100vh;
+  white-space: nowrap;
+  position: absolute;
+  width: 100vw;
+  justify-content: center;
+}
+#menu-toggle.fade-in {
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+#text-1:before {
+  content: "";
+  width:1px;
+  height: 2px;
+  background: red;
+}
+.my-lief-text {
+  opacity: 0;
+  margin-top: -40px;
+  z-index: 0 !important;
+  line-height: 1.01;
+}
+.pack-min {
+  width: 350px;
+  z-index: 1;
+  opacity: 0;
+  transform: scale(0);
+}
+.product {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: none;
+
+}
+.lief-big {
+  position: absolute;
+  max-width: 360px;
+  z-index: 0;
+  opacity: 0;
+  transform: scale(0);
+}
+#text-4 {
+  z-index: 12;
+  max-width: 134px;
+  top: -180px;
+     left: 130px;
+  opacity: 0;
+}
+#text-5 {
+  z-index: 12;
+  max-width: 157px;
+  top: -90px;
+    left: 115px;
+  opacity: 0;
+}
+#text-6 {
+  position: absolute;
+  top: 20px;
+}
+
+#text-7 {
+  position: absolute;
+  bottom: 150px;
+}
+#text-8 {
+  position: absolute;
+  max-width: 147px;
+  bottom: 120px;
+  left: 75px;;
+}
+#text-9 {
+  position: absolute;
+  max-width: 147px;
+  bottom: 40px;
+  left: 75px;
+}
+.imgs {
+  position: relative;
+      margin-left: 55px;
+}
+.texts {
+  position: relative;
+}
+.box-animation {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.modal-menu {
+  display: block;
+  background: #ffffff;
+  width: 300px;
+  height: 100vh;
+  z-index: 1;
+  position: absolute;
+  left: -300px;
+  opacity: 0; 
+}
+
+.modal-menu .menu {
+  margin-left: 30px;
+}
+/*.menu li {
+  opacity: 0;
+  }*/
+  .box-animation img {
+    position: absolute;
+  }
+
+  .top-text img {
+    opacity: 0;
+
+  }
+  .top-text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  margin-top: -180px;
+  }
+  .menu-close {
+    position: absolute;
+    top: 5%;
+    left: 11%;
+  }
+  .info {
+    padding-left: 8%;
+  }
+  #menu-toggle {
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  .natasha-1 {
+    position: absolute;
+    z-index: 6;
+    bottom: -100px;
+    left: 60%;
+    max-width: 145px;
+    opacity: 0;
+    /*transform: rotate(90deg) translateY(-100vh);*/
+  }
+  .menu-fixed {
+    position: fixed;
+    z-index: 1;
+    top: 5%;
+    left: 2%;
+  }
+  .menu {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 0px;
+    text-transform: none;
+    padding-left: 0px;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: "ukrbold", Arial;
+    line-height: 1.01;
+    margin: 0.5em 0 0 0;
+  }
+
+  .my-list {
+    list-style: none;
+    margin: 0px;
+  }
+  .my-list li {
+    position: relative;
+    line-height: 1.5em;
+    opacity: 0;
+    transform: scale(0);
+  }
+  .my-list li:before {
+    content: url(../img/icon/leaf_small-min.png);
+    left: -28px;
+    position: absolute;
+    top: 3px;
+  }
+  p, li {
+    color: #505050;
+    font-size: 1.1em;
+    font-family: arial;
+    font-family: "ukrnormal", Arial;
+
+  }
+  p {
+    margin: 10px 0;
+  }
+  .menu-item {
+    padding-left: 1%;
+    color:#FFD100 ;
+    padding: 5px 0;
+    letter-spacing: 1px;
+  }
+  .menu-item.my-active a {
+    color:#FFD100 ;
+  }
+  .menu-item a {
+    color:#505050;
+    font-family: "ukrbold", Arial;
+  }
+  .top-text-2 p{
+        line-height: 27px;
+  }
+
+   .top-text-2 span {
+    text-align: center;
+    display: block;
+    padding-top: 3px;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+  }
+  .menu-item a:hover,
+  .menu-item a:focus {
+    text-decoration: none;
+  }
+
+  /*Второй слайд*/
+  .natasha-2 {
+    width: 165px;
+  }
+  .my-80 {
+    width: 110px;
+    margin: 0 15px 0 0;
+  }
+  .som-text {
+    position:absolute;
+    bottom: 0px;
+    left: 50%;
+  }
+  .som-text img {
+    position: absolute;
+  }
+  .top-text-2 {
+    display: flex;
+    height: 143px;
+    font-size: 0.9em;
+    align-items: center;
+  }
+  .my-green {
+    background: #77AD1C;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 40px;
+  }
+  .my-green:hover, .my-green:focus {
+    background: #89CD16;
+    color: white;
+  }
+  .box-flex p {
+    margin-right: 50px;
+  }
+  .box-flex {
+   display: flex;
+   margin-top:  20px;
+   align-items: center;
+   align-content: center;
+j
+ }
+ .tabletki-content_block .tabletki-product_image img {
+  max-height: 100px !important;
+  max-width: 100% ;
+}
+
+.tabletki-content_block.tabletki-cf {
+  display: none !important;
+}
+.tabletki-content {
+  width: 100%;
+  height: 480px;
+}
+#tabletki-informer {
+  width: 1200px;
+}
+.tabletki_filter {
+  padding-top: 0;
+  max-width: 175px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Четвертый слайд*/
+
+
+.four .wrap {
+  display: flex;
+  height: 100vh;
+  white-space: nowrap;
+  position: absolute;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.natasha-3 {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  max-width: 140px;
+  margin-left: -70px;
+}
+.product p {
+  z-index: 3;
+  font-size: .9em;
+  text-align: center;
+}
+
+
+
+
+.samo {
+  color: #FFD100;
+  font-family: ukrbold;
+  font-size: 5.1em;
+  max-width: 980px;
+  white-space: initial;
+  text-align: center;
+  line-height: 1.01;
+
+}
+.samo-1 {
+  letter-spacing: 1px;
+  margin-top: -70px;
+}
+.samo-3 {
+  font-size: .9em;
+}
+
+/*Футер*/
+.footer img {
+    position: fixed;
+    bottom: 20px;
+    max-width: 150px;
+    z-index: -1;
+    left: 15px;
+}
