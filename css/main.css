@@ -525,5 +525,45 @@ p, li {
   max-width: 161px;
   margin-left: -90px;
   }
+.pack-min {
+    width: 423px;
+}
+.lief-big {
+    max-width: 405px;
+}
 
+}
+
+@media screen and (max-width: 1024px) {
+  .lief-big, .pack-min {
+    max-width: 250px;
+  }
+  .natasha-1 {
+    max-width: 125px;
+  }
+  .info {
+    padding-left: 4%;
+}
+p, li {
+      font-size: 1em;
+}
+.top-text-2 {
+  padding-left: 80px;
+}
+.map-preview img {
+    max-width: 700px;
+}
+.samo {
+  font-size: 4.1em;
+  }
+  .samo-3 {
+    font-size: .8em;
+    white-space: normal;
+    text-align: center;
+    padding: 0 30px;
+}
+.imgs {
+    position: relative;
+    margin-left: -15px;
+}
 }
