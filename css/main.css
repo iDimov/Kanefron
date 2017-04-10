@@ -2,7 +2,9 @@
   width: 1px;
   height: 1px;
 }
-
+html {
+  background-image: url(../img/bg/pattern_small.png);
+}
 ::-webkit-scrollbar-button {
   width: 1px;
   height: 1px;
@@ -35,6 +37,35 @@ body:after {
   height:100vh;
   display:inline-block;
   position:relative;
+}
+.recepy-digit {
+  margin: 30px 0;
+      display: block;
+}
+h5 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+}
+p.recepy-texts {
+  white-space: normal;
+  max-width: 345px;
+}
+.box-recepy h1 {
+  margin-top: -50px;
+}
+.ul-flex {
+      display: flex;
+      flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 90px;
+}
+.recepy-info {
+    display: flex;
+    max-width: 87%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 87%;
 }
 #container .box > div {
 
@@ -88,6 +119,122 @@ opacity: 1;
   position: relative;
   top: 10px;
 }
+.back {
+  cursor: pointer;
+  position: absolute;
+  bottom: 15%;
+    left: 50%;
+    margin-left: -36px;
+}
+
+#q-2, 
+#q-3,
+#q-4,
+#q-5,
+#q-6,
+#q-7,
+#q-8,
+#q-9,
+#q-10,
+#q-11 {
+  display: none;
+}
+.recepy-info-1 {
+      display: flex;
+    align-items: center;
+    justify-content: center;
+ height: 90%;
+}
+
+#t-c-2, 
+#t-c-3, 
+#t-c-4, 
+#t-c-5, 
+#t-c-6, 
+#t-c-7, 
+#t-c-8, 
+#t-c-9, 
+#t-c-10, 
+#t-c-11 {
+  display: none;
+} 
+#t-q-2, 
+#t-q-3, 
+#t-q-4, 
+#t-q-5, 
+#t-q-6, 
+#t-q-7, 
+#t-q-8, 
+#t-q-9, 
+#t-q-10, 
+#t-q-11 {
+  display: none;
+} 
+.test-variation {
+    display: flex;
+    align-items: center;
+}
+.test-variation img {
+    padding: 20px 30px 20px 20px;
+      cursor: pointer;
+}
+.test-variation img:hover + p, 
+.test-variation p:hover {
+  border-color: #acd030;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+  color: #acd030;
+}
+.pack-t {
+  margin-top: -70px;
+}
+.pochka-s-2 {
+    position: absolute;
+    top: 19%;
+    padding-left: 40%;
+}
+.pochka-s-1 {
+      position: absolute;
+    bottom: 5%;
+    padding-left: 20%;
+}
+.pochka-says {
+  position: absolute;
+  bottom: 0;
+  margin-left: -100px;
+}
+.test-variation p {
+    letter-spacing: 3px;
+    font-family: 'ukrbold';
+    border: 2px solid #FDD209;
+    padding: 13px 30px 10px;
+    border-radius: 100px;
+        text-transform: uppercase;
+      -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.test-top-text {
+
+    color: white;
+    font-size: 1.2em;
+    font-family: "ukrbold", Arial;
+    letter-spacing: 1px;
+}
+.test-bg {
+  background: url(../img/photo/bg-photo-min.png);
+      background-position: center;
+    background-size: contain;
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.test-content {
+
+}
 .line-3 {
   width: 0px;
   background: #354777;
@@ -105,7 +252,21 @@ opacity: 1;
   white-space: nowrap;
   position: absolute;
   width: 100vw;
-  justify-content: center;
+  align-items: center;
+}
+.ya-share2__item_service_vkontakte .ya-share2__badge {
+    background: url(/new/img/photo/vk-min.png) !important;
+    width: 85px;
+    padding: 0 10px;
+    background-repeat: no-repeat !important;
+    height: 40px;
+}
+.ya-share2__item_service_facebook .ya-share2__badge {
+    background: url(/new/img/photo/fb-min.png) !important;
+    width: 85px;
+    padding: 0 10px;
+    background-repeat: no-repeat !important;
+    height: 40px;
 }
 #menu-toggle.fade-in {
   visibility: visible;
@@ -207,172 +368,290 @@ opacity: 1;
 .modal-menu .menu {
   margin-left: 30px;
 }
-/*.menu li {
-  opacity: 0;
-  }*/
-  .box-animation img {
-    position: absolute;
-  }
+.box-animation img {
+  position: absolute;
+}
+#recepy-2 .share-recepy {
+    width: 35%;
+    background: white;
 
-  .top-text img {
-    opacity: 0;
+    height: 100%;
+    float: right;
 
-  }
-  .top-text {
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-  margin-top: -180px;
-  }
-  .menu-close {
-    position: absolute;
-    top: 5%;
-    left: 11%;
-  }
-  .info {
-    padding-left: 8%;
-  }
-  #menu-toggle {
-    transition: all 1s ease;
-    visibility: hidden;
-    opacity: 0;
-  }
-  .natasha-1 {
-    position: absolute;
-    z-index: 6;
-    bottom: -100px;
-    left: 60%;
-    max-width: 145px;
-    opacity: 0;
-    /*transform: rotate(90deg) translateY(-100vh);*/
-  }
-  .menu-fixed {
-    position: fixed;
-    z-index: 1;
-    top: 5%;
-    left: 2%;
-  }
-  .menu {
-    height: 100vh;
-    display: flex;
+align-items: flex-end;
     justify-content: center;
-    flex-direction: column;
-    list-style: none;
-    margin-left: 0px;
-    text-transform: none;
-    padding-left: 0px;
-  }
-  h1, h2, h3, h4, h5 {
-    font-family: "ukrbold", Arial;
-    line-height: 1.01;
-    margin: 0.5em 0 0 0;
-  }
-
-  .my-list {
-    list-style: none;
-    margin: 0px;
-  }
-  .my-list li {
-    position: relative;
-    line-height: 1.5em;
-    opacity: 0;
-    transform: scale(0);
-  }
-  .my-list li:before {
-    content: url(../img/icon/leaf_small-min.png);
-    left: -28px;
-    position: absolute;
-    top: 3px;
-  }
-  p, li {
-    color: #505050;
-    font-size: 1.1em;
-    font-family: arial;
-    font-family: "ukrnormal", Arial;
-
-  }
-  p {
-    margin: 10px 0;
-  }
-  .menu-item {
-    padding-left: 1%;
-    color:#FFD100 ;
-    padding: 5px 0;
-    letter-spacing: 1px;
-  }
-  .menu-item.my-active a {
-    color:#FFD100 ;
-  }
-  .menu-item a {
-    color:#505050;
-    font-family: "ukrbold", Arial;
-  }
-  .top-text-2 p{
-        line-height: 27px;
-  }
-
-   .top-text-2 span {
-    text-align: center;
-    display: block;
-    padding-top: 3px;
-    letter-spacing: 1px;
-    font-size: 1.1em;
-  }
-  .menu-item a:hover,
-  .menu-item a:focus {
-    text-decoration: none;
-  }
-
-  /*Второй слайд*/
-  .natasha-2 {
-    width: 165px;
-  }
-  .my-80 {
-    width: 110px;
-    margin: 0 15px 0 0;
-  }
-  .som-text {
-    position:absolute;
-    bottom: 0px;
-    left: 50%;
-  }
-  .som-text img {
-    position: absolute;
-  }
-  .top-text-2 {
+}
+.slova-pochki-6 {
+padding: 30px;
+} 
+.pack-min-2 {
+  margin-top: -70px;
+}
+#recepy-2  .video-recepy {
+    width: 65%;
+    height: 100%;
+    float: left;
     display: flex;
-    height: 143px;
-    font-size: 0.9em;
+    align-items: left;
+justify-content: space-around;
+    flex-direction: column;
+}
+.my-bg-y-r {
+  height: 100%;
+  position: absolute;
+  right: 0px;
+}
+.my-bg-y-l {
+  height: 100%;
+  position: absolute;
+  left: 0px;
+      transform: scale(-1, 1);
+}
+.share-recepy {
+    width: 35%;
+    background: white;
+    height: 100%;
+    float: right;
+    display: flex;
     align-items: center;
-  }
-  .my-green {
-    background: #77AD1C;
-    color: #fff;
-    font-size: 1em;
-    letter-spacing: 1px;
-    border-radius: 40px;
-  }
-  .my-green:hover, .my-green:focus {
-    background: #89CD16;
-    color: white;
-  }
-  .box-flex p {
-    margin-right: 50px;
-  }
-  .box-flex {
-   display: flex;
-   margin-top:  20px;
-   align-items: center;
-   align-content: center;
-j
+    justify-content: center;
+}
+
+.video-recepy {
+  width: 65%;
+  height: 100%;
+      float: left;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+}
+.top-text img {
+  opacity: 0;
+
+}
+.my-recepy-title {
+    max-width: 249px;
+    text-align: left;
+    white-space: normal;
+    line-height: 1.1em;
+    padding-left: 25px;
+}
+.my-box-v {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+      position: absolute;
+}
+#recepy-2  .yellow-box {
+  background-color: #FDD209;
+  width:100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.yellow-box {
+  background-color: #FDD209;
+  width:100%;
+  height: 50%;
+}
+.box-recepy {
+    width:100%;
+  height: 50%;
+  z-index: 99;
+    position: relative;
+}
+.top-text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: -180px;
+}
+.menu-close {
+  position: absolute;
+  top: 5%;
+  left: 11%;
+}
+.info {
+  padding-left: 8%;
+}
+
+.my-recepi-2,
+.my-recepi-4
+ {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    justify-content: space-around;
+}
+
+
+.my-recepi-3 {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu-toggle {
+  transition: all 1s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.natasha-1 {
+  position: absolute;
+  z-index: 6;
+  bottom: -100px;
+  left: 60%;
+  max-width: 145px;
+  opacity: 0;
+  /*transform: rotate(90deg) translateY(-100vh);*/
+}
+.menu-fixed {
+  position: fixed;
+  z-index: 1;
+  top: 5%;
+  left: 2%;
+}
+.menu {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+  margin-left: 0px;
+  text-transform: none;
+  padding-left: 0px;
+  min-width: 250px;
+  margin-left: 80px;
+}
+h1, h2, h3, h4, h5 {
+  font-family: "ukrbold", Arial;
+  line-height: 1.01;
+  margin: 0.5em 0 0 0;
+}
+
+.my-list {
+  list-style: none;
+  margin: 0px;
+}
+.my-list li {
+  position: relative;
+  line-height: 1.5em;
+  opacity: 0;
+  transform: scale(0);
+}
+.my-list li:before {
+  content: url(../img/icon/leaf_small-min.png);
+  left: -28px;
+  position: absolute;
+  top: 3px;
+}
+p, li {
+  color: #505050;
+  font-size: 1em;
+  font-family: arial;
+  font-family: "ukrnormal", Arial;
+
+}
+.at .imgs {
+    position: relative;
+    margin-left: -20px;
+} 
+.at .natasha-1 {
+  left: -100%;
+}
+p {
+  margin: 10px 0;
+}
+.menu-item {
+  padding-left: 1%;
+  color:#FFD100 ;
+  padding: 5px 0;
+  letter-spacing: 1px;
+}
+.menu-item.my-active a {
+  color:#FFD100 ;
+}
+.menu-item a {
+  color:#505050;
+  font-family: "ukrbold", Arial;
+}
+.top-text-2 p{
+      line-height: 27px;
+}
+
+  .top-text-2 span {
+  text-align: center;
+  display: block;
+  padding-top: 3px;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+.menu-item a:hover,
+.menu-item a:focus {
+  text-decoration: none;
+}
+
+/*Второй слайд*/
+.natasha-2 {
+  width: 165px;
+}
+.my-80 {
+  width: 110px;
+  margin: 0 15px 0 0;
+}
+.som-text {
+  position:absolute;
+  bottom: 0px;
+  left: 50%;
+}
+.som-text img {
+  position: absolute;
+}
+.top-text-2 {
+  display: flex;
+  height: 143px;
+  font-size: 0.9em;
+  align-items: center;
+}
+.my-green {
+  background: #77AD1C;
+  color: #fff;
+  font-size: 1em;
+  letter-spacing: 1px;
+  border-radius: 40px;
+}
+
+.my-green:hover, .my-green:focus {
+  background: #89CD16;
+  color: white;
+}
+.box-flex p {
+  margin-right: 50px;
+}
+.box-flex {
+  display: flex;
+  margin-top:  20px;
+  align-items: center;
+  align-content: center;
  }
  .tabletki-content_block .tabletki-product_image img {
   max-height: 100px !important;
   max-width: 100% ;
 }
-
+.my-recepi-1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
 .tabletki-content_block.tabletki-cf {
   display: none !important;
+}
+.r-m-top {
+      margin-top: -13%;
 }
 .tabletki-content {
   width: 100%;
@@ -387,10 +666,40 @@ j
 }
 
 
+/*Второй слайд*/
+.wrap-3 div:nth-child(2) {
+    margin: 0 33%;
+}
+#my-margin {
+    margin: 0px 34% 0 36%;
+}
 
-
-
-
+.tests {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+}
+.tests p {
+    white-space: initial;
+    max-width: 380px;
+}
+.wrap-3{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.wrap-2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.wrap-2 div,
+.wrap-3 div {
+  min-width: 333px !important;
+}
 
 
 
@@ -401,7 +710,20 @@ j
 
 /*Четвертый слайд*/
 
+.my-ab-img {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  max-width: 330px;
+    transition: all 1s ease;
+}
 
+
+.images:focus > .my-ab-img ,
+.images:hover > .my-ab-img {
+  opacity: 1;
+  transition: all 1s ease;
+}
 .four .wrap {
   display: flex;
   height: 100vh;
@@ -463,7 +785,25 @@ j
 .line-3 {
   max-width: 265px;
 }
+.at .two {
+  max-width: 75%;
+  z-index: -53;
+}
+.at .four {
+      z-index: -90;
+}
+
 @media screen and (min-width: 1600px) {
+ .wrap-2 div, .wrap-3 div {
+    min-width: 380px !important;
+}
+
+.my-ab-img {
+   max-width: 380px !important;
+}
+#my-margin {
+    margin: 0px 33% 0 30%;
+}
   #text-1 {
     width: 135px;
 }
@@ -474,8 +814,7 @@ j
   max-width: 135px;
 }
 .listy-text {
-  max-width: 170px;
-  width: 170px;
+  max-width: 190px;
 }
 .uk-h1, h1 {
     font-size: 3em;
@@ -506,6 +845,7 @@ j
 #text-7 {
   width: 192px;
 }
+
 p, li {
       font-size: 1.2em;
 }
@@ -536,6 +876,11 @@ p, li {
 
 }
 
+@media screen and (max-width: 600px) {
+  #container {
+    display: none;
+  }
+}
 @media screen and (max-width: 1024px) {
   .lief-big, .pack-min {
     max-width: 250px;
@@ -569,3 +914,4 @@ p, li {
     margin-left: -15px;
 }
 }
+
