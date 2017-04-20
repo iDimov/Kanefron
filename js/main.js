@@ -6,14 +6,46 @@ $(function(){
 	$('.menu-close').on('click', function(){
 		$('.modal-menu').animate({'left': '-300px', 'opacity': '0'}, 500)
 	});
+
+
+var sum = 0;
+
+var arr = [
+	"img/bg/photo_1.png",
+	"img/bg/photo_2.png",
+	"img/bg/photo_3.png",
+	"img/bg/photo_4.png",
+	"img/bg/photo_5.png"
+];
+
+var number = 0;
+
+  // Тест интерактив
 $('.test-variation').on('click', function(){ 
-	$(this).closest(".myqs").hide(200);
+	var scores = $(this).attr('data');
+		console.log(scores);
+
+
+
+	sum = Number(sum) + Number(scores); 
+	console.log(sum);
+  $(this).closest(".myqs").hide(200);
 	$(this).closest(".myqs").next().show(300);
 	$('.test-title.active').hide(200);
 	$('.test-title.active').removeClass('active').next().show(300).addClass('active');
 	$('.test-counter.active').hide(200);
 	$('.test-counter.active').removeClass('active').next().show(300).addClass('active');
+
+number++;
+	$('.test-bg').fadeTo('fast', 0.3, function(){
+    $(this).css('background-image', 'url(' + arr[number] + ')');
+}).fadeTo('400', 1);
+
+
 });
+
+
+
 $('.back').on('click', function(){ 
 	$(this).parent().prev().show(300);
 	$(this).parent().hide(200);
@@ -21,7 +53,48 @@ $('.back').on('click', function(){
 	$('.test-title.active').removeClass('active').prev().show(300).addClass('active');
 	$('.test-counter.active').hide(200);
 	$('.test-counter.active').removeClass('active').prev().show(300).addClass('active');
+	number--;
+	$('.test-bg').fadeTo('300', 0.3, function(){
+    $(this).css('background-image', 'url(' + arr[number] + ')');
+}).fadeTo('300', 1);
 });
+
+$('#q-5 .test-variation').on('click', function(){ 
+  console.log('dfgsdfg');
+		$("#di").hide(200);
+		$("#dis").show(300);
+		if(sum < 8 ) {
+			$('.pochka-s-2').attr('src', 'img/text/ans_1.svg');
+			$('.dyn-text').html('Живы с проблемными почками? Надо сообщить британским ученым.');
+		} else if(sum < 12) {
+			$('.pochka-s-2').attr('src', 'img/text/ans_2.svg');
+						$('.dyn-text').html('Ребята, анука мигом к врачу. Лучше не пешком. В теории еще можете успеть.');
+		} else if(sum < 17) {
+		$('.pochka-s-2').attr('src', 'img/text/ans_3.svg');
+					$('.dyn-text').html(' Но, знаете, жизнь – штука изменчивая.');
+		} else if(sum > 17) {
+		$('.pochka-s-2').attr('src', 'img/text/ans_4.svg');
+					$('.dyn-text').html(' Бросайте все и показуйте всем свои эталонные почки.');
+		}
+});
+
+
+
+var tl = new TimelineLite();
+var oog_open = $('#oog_open');
+var oog_dicht = $('#oog_dicht');
+
+function winkEye() {
+  tl.set($("#oog_dicht"), { opacity: 1, delay: 4});
+  tl.set($("#oog_open"), { opacity: 0});
+ 
+   tl.set($("#oog_open"), { opacity: 1, delay: 0.1});
+   tl.set($("#oog_dicht"), { opacity: 0, onComplete: winkEye});
+  
+}
+
+winkEye();
+
 
 //Анимация первого экрана
 var lief = $('.lief-big'),
@@ -63,4 +136,4 @@ tl.to(lief, 1, {autoAlpha: 1, rotation: 360, scale: 1, ease:Power4.easeOut})
 	//  	indent: 0
 	//  })
 
-})
+});

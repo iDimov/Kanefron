@@ -9,6 +9,9 @@ html {
   width: 1px;
   height: 1px;
 }
+.ya-share2__icon {
+  background: none !important;
+}
 
 *,
 *:before.
@@ -178,6 +181,9 @@ opacity: 1;
     padding: 20px 30px 20px 20px;
       cursor: pointer;
 }
+#dis {
+  display: none;
+}
 .test-variation img:hover + p, 
 .test-variation p:hover {
   border-color: #acd030;
@@ -187,13 +193,25 @@ opacity: 1;
   cursor: pointer;
   color: #acd030;
 }
+
+#oog_open {
+  position: absolute;
+   margin-left: -100px;
+}
+
+#oog_dicht {
+  position: absolute;
+  margin-left: -100px;
+    opacity: 0;
+}
+
 .pack-t {
   margin-top: -70px;
 }
 .pochka-s-2 {
     position: absolute;
     top: 19%;
-    padding-left: 40%;
+     padding-left: 46%;
 }
 .pochka-s-1 {
       position: absolute;
@@ -216,6 +234,14 @@ opacity: 1;
   -moz-transition: all .5s ease;
   transition: all .5s ease;
 }
+.dyn-text {
+      position: absolute;
+    bottom: 25%;
+    left: 50%;
+        z-index: 99;
+    width: 400px;
+    white-space: normal
+}
 .test-top-text {
 
     color: white;
@@ -224,13 +250,15 @@ opacity: 1;
     letter-spacing: 1px;
 }
 .test-bg {
-  background: url(../img/photo/bg-photo-min.png);
+  background: url(../img/bg/photo_1.png);
       background-position: center;
     background-size: contain;
         display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+      width:100%;
+  height: 50%;
 }
 .test-content {
 
@@ -653,17 +681,7 @@ p {
 .r-m-top {
       margin-top: -13%;
 }
-.tabletki-content {
-  width: 100%;
-  height: 480px;
-}
-#tabletki-informer {
-  width: 1200px;
-}
-.tabletki_filter {
-  padding-top: 0;
-  max-width: 175px;
-}
+
 
 
 /*Второй слайд*/
