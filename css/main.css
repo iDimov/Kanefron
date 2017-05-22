@@ -177,12 +177,25 @@ opacity: 1;
     display: flex;
     align-items: center;
 }
+.six .natasha-1 {
+    position: absolute;
+    z-index: 6;
+    bottom: 133px;
+    left: 67%;
+    max-width: 145px;
+}
+.six .wrap {
+  justify-content: space-around;
+}
 .test-variation img {
     padding: 20px 30px 20px 20px;
       cursor: pointer;
 }
 #dis {
   display: none;
+}
+.sostav-html .info {
+  padding: 0;
 }
 .test-variation img:hover + p, 
 .test-variation p:hover {
@@ -193,7 +206,169 @@ opacity: 1;
   cursor: pointer;
   color: #acd030;
 }
+.tabletki-content_block .tabletki-counter {
+    color: #77AD1C !important;
+    font-size: 42px !important;
+    margin: 0 !important;
+        font-family: "ukrbold", Arial !important;
+}
+.s-default {
+  white-space: normal;
+}
+.two .s-box-animation {
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+.two #s-text-4 {
+    z-index: 12;
+    max-width: 160px;
+    top: 35px;
+    left: 458px;
+    position: relative;
+}
+.sostav-html .box-animation {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+.center {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 
+
+}
+.disease-html #text-4 {
+      max-width: 250px;
+}
+.disease-html .box-flex p {
+    margin-right: 50px;
+    white-space: normal;
+}
+
+.c-sostav-2 div:first-child {
+      margin-left: -20%;
+}
+.c-sostav-2 div:nth-child(3) {
+      margin-left: 20%;
+}
+.disease-html .box-animation {
+    position: absolute;
+    bottom: 0;
+    left: -19%;
+}
+.sostav-html #text-4 {
+      max-width: 170px;
+}
+.divider {
+  padding: 50px 0;
+  margin-left: -5%;
+}
+#s-text-5 {
+    z-index: 12;
+    max-width: 157px;
+    top: 141px;
+    left: 312px;
+    position: relative;
+}
+#s-text-4 {
+    z-index: 12;
+    max-width: 134px;
+    top: 35px;
+    left: 441px;
+    position: relative;
+}
+.c-sostav-3 > div {
+  max-width: 60%;
+
+}
+.c-sostav-2 > div {
+  max-width: 60%;
+
+}
+.wrap p {
+  white-space: normal;
+}
+.c-sostav-2 {
+      display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.c-sostav-3 {
+      display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.s-sostav-1 {
+      display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.c-sostav-1 { 
+    max-width: 70%;
+    float: left;
+    padding-left: 5%;
+}
+.s-natasha-1 {
+    position: absolute;
+    z-index: 6;
+    top: 0px;
+    left: 95%;
+}
+.s-box-animation {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.s-sostav-1 > div {
+  width: 43%;
+}
+.two .s-sostav-1 > div {
+  width: 40%;
+  padding: 0 20px;
+}
+.tabletki-content_block .tabletki-product_name {
+    margin: 0 !important;
+    margin-top: 10px !important;
+    font-size: 28px !important;
+    text-transform: capitalize !important;
+    color: #505050 !important;
+    font-family: "ukrbold", Arial !important;
+    letter-spacing: 2px !important;
+}
+.tabletki-content { 
+    font-family: "ukrnormal", Arial !important;
+    letter-spacing: 1px !important;
+}
+.tabletki-modal_closeBtn {
+    cursor: pointer !important;
+    position: relative !important;
+    height: 45px !important;
+    line-height: 45px !important;
+    padding: 0 5px 0 20px !important;
+    display: inline-block !important;
+    outline: none !important;
+    text-decoration: none !important;
+    font-size: 16px !important;
+    opacity: 0.8 !important;
+    font-style: normal !important;
+    color: #505050 !important;
+    font-size: 2em !important;
+    font-family: "ukrbold", Arial !important;
+    letter-spacing: 2px !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    display: block !important;
+}
+.tabletki_map-or-list {
+    display: none !important;
+}
 #oog_open {
   position: absolute;
    margin-left: -100px;
@@ -564,13 +739,35 @@ h1, h2, h3, h4, h5 {
   list-style: none;
   margin: 0px;
 }
+.s-cistit {
+  padding: 10px 0px 5px;
+}
 .my-list li {
   position: relative;
   line-height: 1.5em;
   opacity: 0;
   transform: scale(0);
 }
+.s-images {
+  text-align: center;
+}
 .my-list li:before {
+  content: url(../img/icon/leaf_small-min.png);
+  left: -28px;
+  position: absolute;
+  top: 3px;
+}
+
+.s-my-list {
+  list-style: none;
+  margin: 0px;
+}
+.s-my-list li {
+  position: relative;
+  line-height: 1.8em;
+  font-weight: bold;
+}
+.s-my-list li:before {
   content: url(../img/icon/leaf_small-min.png);
   left: -28px;
   position: absolute;
@@ -609,7 +806,6 @@ p {
 .top-text-2 p{
       line-height: 27px;
 }
-
   .top-text-2 span {
   text-align: center;
   display: block;
@@ -635,8 +831,18 @@ p {
   bottom: 0px;
   left: 50%;
 }
+b, strong {
+    font-weight: 900;
+    font-family: "ukrbold", Arial;
+}
 .som-text img {
   position: absolute;
+}
+.profilaktika {
+  padding: 10px 0;
+}
+.six h1 {
+  margin-top: -60px;
 }
 .top-text-2 {
   display: flex;
@@ -650,6 +856,8 @@ p {
   font-size: 1em;
   letter-spacing: 1px;
   border-radius: 40px;
+  line-height: 3;
+      padding-top: 1px;
 }
 
 .my-green:hover, .my-green:focus {

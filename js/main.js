@@ -79,7 +79,7 @@ $('#q-5 .test-variation').on('click', function(){
 });
 
 
-
+//Анимация моргания Наташи
 var tl = new TimelineLite();
 var oog_open = $('#oog_open');
 var oog_dicht = $('#oog_dicht');
